@@ -17,8 +17,9 @@ int main()
     return 0;
 }
 void search(int arr[],int up,int lw,int key)
-{
-    int mid=(lw+up)/2;
+{   int mid;
+    if(up>=lw)
+      mid=lw+(up-lw)/2;
     c++;
     if(arr[mid]>key)
     {
@@ -37,3 +38,4 @@ void search(int arr[],int up,int lw,int key)
       }
 
 }
+
