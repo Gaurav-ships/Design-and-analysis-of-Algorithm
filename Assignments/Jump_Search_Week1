@@ -24,12 +24,12 @@ int main()
     int n,key;
      cout<<"enter the size of array:";
      cin>>n;
-     cout<<"enter the key:";
-     cin>>key;
     int A[n];
     cout<<"enter the elements:";
     for(int i=0;i<n;i++)
         cin>>A[i];
+     cout<<"enter the key:";
+     cin>>key;
      int c= JumpSearch(A,key,n);
      if(c==-1)
         cout<<" key not found";
@@ -37,6 +37,8 @@ int main()
         cout<<"key found";
     return 0;
 }
+
+
 
 
 
