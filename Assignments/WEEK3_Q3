@@ -1,4 +1,25 @@
 #include<stdio.h>
+void mergeSort(int A[],int l, int r);
+void merge(int A[],int l,int m,int r);
+void findDuplicate(int A[],int n);
+int main()
+{
+ int t;
+ printf("enter the test cases:");
+ scanf("%d",&t);
+ while(t--)
+ {
+  int n,i;
+  printf("\nInput array limit: ");
+  scanf("%d",&n);
+  int A[n];
+  printf("\nInput array elements: ");
+  for(i=0;i<n;i++)
+  scanf("%d",&A[i]);
+  findDuplicate(A,n);
+ }
+
+}
 void mergeSort(int A[],int l, int r)
 {
 if(l<r)
@@ -69,18 +90,4 @@ else
     printf("NO");
 }
 
-int main()
-{
-int n,i;
-printf("Input array limit: ");
-scanf("%d",&n);
-int A[n];
-printf("Input array elements: ");
-for(i=0;i<n;i++)
-scanf("%d",&A[i]);
 
-
-findDuplicate(A,n);
-
-
-}
