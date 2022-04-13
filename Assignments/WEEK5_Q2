@@ -3,6 +3,10 @@
 using namespace std;
 int main()
 {
+    int t;
+    cin>>t;
+    while(t--)
+   {
     int n,key,flag=0;
     cin >> n;
     int a[n];
@@ -32,6 +36,6 @@ int main()
 
     if(flag==0)
         cout << "No such element exist" << endl;
-
+   }
     return 0;
 }
